@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>チャットルーム</title>
+</head>
+<body>
+  <h1 id="roomInfo"></h1>
+  <div id="creatorInfo"></div>
+  <div id="userList"></div>
+  <div id="messages"></div>
+
+  <form id="chatForm">
+    <input type="text" id="messageInput" autocomplete="off" required />
+    <button type="submit">送信</button>
+  </form>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="room.js"></script>
+</body>
+</html>
